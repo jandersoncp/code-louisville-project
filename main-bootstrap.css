@@ -1,0 +1,346 @@
+body, input, footer {
+	font-family: 'Open Sans', sans-serif;
+	background-color: white;
+}
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#wrapper.toggled {
+    padding-left: 150px;
+}
+#topNav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: #f5f5f5;
+	border-bottom: 1px solid #ddd;
+	padding: 15px 15px 0 15px;
+	z-index: 2;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#topNav #logoSmall {
+	width: 70%;
+}
+#topNav .links {
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+#topNav .links a {
+	position: relative;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    text-decoration: none;
+    padding: 8px 0 0 0;
+    display: block;
+    width: 94px;
+    text-align: center;
+	font-weight: 600;
+	font-size: 20px;
+}
+#topNav .links a:hover {
+	color: #58a616;
+}
+#topNav .links li {
+	width: 15%;
+}
+#topNav .links a#cartMobile {
+	top: 8px;
+}
+#leftNav {
+	z-index: 1000;
+    position: fixed;
+	left: 0;
+	width: 0;
+    height: 100%;
+	margin-left: -150px;
+	overflow-y: auto;
+    background: #f5f5f5;
+    border-right: 1px solid #dddddd;
+    padding: 25px 25px 0 25px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#wrapper.toggled #leftNav {
+    width: 150px;
+}
+#leftNav #logo {
+	position: relative;
+	margin: 0 0 25px 0;
+}
+#leftNav #links li {
+	border-top: 1px solid #cccccc;
+}
+#leftNav #links a {
+	position: relative;
+    text-transform: uppercase;
+    color: #3d3d3d;
+    text-decoration: none;
+    padding: 22px 0;
+    display: block;
+    width: 94px;
+    text-align: center;
+	font-weight: 600;
+	font-size: 20px;
+}
+#leftNav #links a:hover {
+	color: #58a616;
+}
+#leftNav #links #cart {
+	margin: 0 0 0 5px;
+}
+#leftNav #profile {
+	position: fixed;
+	bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+	font-size: 16px;
+    font-weight: 600;
+}
+#leftNav #profile #notificationsBubble {
+	width: 25px;
+    height: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 4px 0 0 0;
+    z-index: 10;
+    color: whitesmoke;
+    background-color: #b80000;
+    text-align: center;
+}
+#leftNav #profile img {
+	display: block;
+    margin: 0 0 8px 0;
+    object-fit: cover;
+    border-radius: 50%;
+	border: 3px solid #3d3d3d;
+}
+#pageContentWrapper {
+    width: 100%;
+    position: absolute;
+	background-color: #e9e6e1;
+}
+#wrapper.toggled #pageContentWrapper {
+    position: absolute;
+    margin-right: -150px;
+}
+#mainContent {
+	position: relative;
+	z-index: 1;
+}
+#mainContent #banner #bContent {
+    position: relative;
+    padding-top: 150px;
+	padding-bottom: 25px;
+}
+#mainContent #banner #bContent h1 {
+	font-weight: 600;
+    font-size: 48px;
+    color: #58a616;
+}
+#mainContent #banner #bContent h2 {
+	color: #3d3d3d;
+	margin: 0 0 65px;
+	font-size: 48px;
+}
+#mainContent #banner #bContent input {
+	border: none;
+    padding: 17px 70px 17px 27px;
+    width: 98%;
+    border-radius: 10px;
+    font-size: 33px;
+    color: #8d8d8d;
+	margin: 0 0 27px;
+	line-height: normal;
+}
+#mainContent #banner #bContent button {
+	position: relative;
+	height: 41px;
+	width: 41px;
+	background: url("../images/magnifying-glass.png") no-repeat white;
+	border: none;
+	margin: 0 0 0 -70px;
+    top: 7px;
+}
+#mainContent #banner #bContent button:hover {
+	cursor: pointer;
+}
+#mainContent #banner #bContent a {
+	text-decoration: none;
+    font-size: 20px;
+    color: #65ab30;
+}
+#mainContent #banner #bContent a:hover {
+	text-decoration: underline;
+}
+#mainContent #productContent {
+	background-color: white;
+}
+#mainContent #productContent ul {
+    text-align: center;
+    padding: 35px 0 23px 0;
+    position: relative;
+}
+#mainContent #productContent ul li {
+	margin: 0 12.5px 12px 12.5px;
+}
+#mainContent #productContent ul li a {
+	color: black;
+}
+#mainContent #productContent ul li a:hover {
+	text-decoration: none;
+	color: #8d8d8d;
+}
+#mainContent #productContent .productBox a:hover {
+	text-decoration: none;
+}
+#mainContent #productContent .productBox .zoomOverlay {
+	outline: none;
+    overflow: hidden;
+	margin-right: -15px;
+    margin-left: -15px;
+	border-right: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+#mainContent #productContent .img-responsive {
+	margin: 0 auto;
+	overflow: hidden;
+}
+#mainContent #productContent .productBox .zoomOverlay:hover {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .7;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .7;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+#mainContent #productContent h6 {
+	color: #959595;
+    font-size: 18px;
+    text-decoration: line-through;
+    position: relative;
+    margin: 35px 0 0 10px;
+    font-weight: 300;
+}
+#mainContent #productContent h5 {
+	font-size: 30px;
+    color: #58a616;
+    font-weight: 300;
+    margin: 0 0 0 10px;
+}
+
+#footerContent {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 60px 50px;
+	border-top: 2px solid #ddd; 
+	background-color: #eee;
+}
+
+#footerContent ul { 
+	width: 300px;
+}
+
+#footerContent ul h1 {
+	padding-bottom: 5px;
+	font-size: 16px;
+	font-weight: 800;
+	color: #3d3d3d;
+	text-transform: uppercase;	
+}
+#footerContent ul li {
+	padding: 10px 0 10px 10px;
+	font-size: 12px;
+	color: #3d3d3d;
+	font-weight: 600;	
+}
+
+#footerContent a {
+	text-decoration: none;
+	color: #3d3d3d;
+}
+#footerContent a:hover {
+	color: #58a616; 
+}
+.no-padding {
+	padding-left: 0; 
+	padding-right: 0; 
+}
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 150px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #leftNav {
+        width: 150px;
+		left: 150px;
+    }
+
+    #wrapper.toggled #leftNav {
+        width: 0;
+    }
+	
+	#topNav {
+		top: -67px;
+	}
+
+    #pageContentWrapper {
+        padding: 0;
+        position: relative;
+    }
+
+    #wrapper.toggled #pageContentWrapper {
+        position: relative;
+        margin-right: 0;
+    }
+    #footerContent ul {
+        width: 100%;  
+        
+    }
+}
+@media(min-width:992px) {
+	#mainContent #banner {
+		background-size: cover;
+		background: url("../images/banner1.jpg") no-repeat 30% center transparent;
+		height: 846px;
+	}
+	#mainContent #banner #bContent {
+		padding-top: 250px;
+	}
+    #footerContent {
+        flex-flow: wrap 50%;
+        padding-top: 25px;      
+}
