@@ -1,0 +1,159 @@
+/* Get rid of top white space */
+html, body, p {
+    margin: 0;
+    padding: 0;    
+}
+
+/* Font */
+html, body, p, a {
+    font-family: 'Raleway', serif;
+    font-size: 1em;
+}
+
+
+
+
+
+/************** HOMEPAGE ****************/
+
+/* Static header */
+#static-header {
+    position: fixed;
+    height: 125px;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: white;
+    
+}
+
+/* Top Banner Block- contact info */
+#container {
+    padding-top: 130px;
+}
+
+#top-content {
+    display: block; 
+    width: 100%;
+    margin: 0;
+    height: 25px; 
+    background-color: #161c3c; 
+    border-bottom: 5px solid #501d19;
+}
+
+
+/* Logo */
+#logo {
+    float: left;
+    background-color: white; 
+    height: 50px;
+}
+
+.inline-img {
+    display: block;
+    padding: 25px;
+}
+
+
+/* Navigation */ 
+.main-nav ul {
+    float: right;
+    padding: 25px 0 25px 0;
+    background-color: white;
+}
+.main-nav a {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 25px;
+    color: #2d2c2c;   
+}
+
+.main-nav li {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #bbb;       
+}
+
+.main-nav li:last-child {
+    border-right: none;
+}
+    
+
+/* Header */
+#banner img {
+    width: 100%; 
+    border-top: 2px solid #501d19;
+    border-bottom: 2px solid #501d19;
+}
+
+
+
+/* Food photos and content boxes */
+#content-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+#content-boxes div {
+    width: 30%;
+    margin: auto;
+}
+
+#content-boxes img {
+    width: 100%; 
+    box-shadow: 5px 5px 5px 5px #ddd inset;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    text-align: center;
+    height: 75px;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: white; 
+}
+
+footer li {
+    display: inline-block; 
+    text-decoration: none;
+}
+
+
+
+
+/************** OUR STORY ****************/
+
+/* About Premiere Chefs */
+#about-pc {
+    display: block;
+    padding: 150px 0 0 0;
+    width: 100%;
+    
+}
+
+#about-pc .pc-header {
+    text-align: center; 
+    font-weight: 600px;
+    padding: 20px 0 0 0;
+    font-family: 
+    font-size: 1.5em;
+    
+}
+
+#about-pc .pc-pg { 
+    padding: 25px;
+    text-align: center;
+}
+
+
+
+
+
