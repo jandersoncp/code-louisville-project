@@ -31,26 +31,25 @@
     </header>
     
     <body>
-        <div id="container">
-            <div id="banner">
-                <img src="img/birds_eye_header.jpg">
-            </div>
-            <div id="content-boxes">
-                <div id="content-1">
-                    <img src="img/food3_content_item.jpg">
-                </div>
-                <div id="content-2">
-                    <img src="Img/food6_content_item.jpg">
-                </div>
-                <div id="content-3">
-                    <img src="img/food9_content_item.jpg">
-                </div>
-            </div>
-        </div>
-        <link href="script.js">
-    </body>  
+        <div class="contact-form">
+            <h2 class="pc-header">Contact Us</h2>
 
-    <footer>
+            <form action="christie@thepremierplanners.com" method="post" enctype="text/plain" id="contact-pc">
+            <label class="form-label">Name:</label><br>
+            <input type="text" name="name" value="Your Name Here" class="pc-input"><br>
+            <label class="form-label"> E-mail:</label><br>
+            <input type="text" name="mail" value="name@email.com" class="pc-input"><br>
+            <label class="form-label">Subject:</label><br>
+            <input type="text" name="comment" value="Subject" size="50" class="pc-input"><br>
+            <label class="form-label">Comment:</label><br>
+                <textarea rows="8" cols="50" name="Comment" id="pc-textarea" form="contact-pc"></textarea>
+            <input type="submit" value="Send" class="btn">
+            <input type="reset" value="Reset" class="btn">
+            </form>
+        </div>
+    </body>
+    
+     <footer>
         <ul id="social-links">
             <li><a href="#"><img src="img/Facebook.png"></a></li>
             <li><a href="#"><img src="img/Twitter.png"></a></li>
@@ -61,6 +60,3 @@
     </footer>
     
 </html>
-
-    
-        

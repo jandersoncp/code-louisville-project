@@ -1,0 +1,10 @@
+/* About Premier Event Planners */
+.pp-about-container {
+    padding-top: 550px;
+}
+
+#about-pp {
+    display: block; 
+    float: right;
+    width: 55%
+}

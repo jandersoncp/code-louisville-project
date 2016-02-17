@@ -4,61 +4,70 @@ html, body, p {
     padding: 0;    
 }
 
-/* Font */
+/* Font 
 html, body, p, a {
     font-family: 'Raleway', serif;
     font-size: 1em;
 }
 
 
-
-
-
-/************** HOMEPAGE ****************/
+/************** HOMEPAGE ***************/
 
 /* Static header */
-#static-header {
+.static-header {
     position: fixed;
-    height: 125px;
+    height: 200px;
     top: 0;
     width: 100%;
     z-index: 100;
     background-color: white;
-    
 }
 
-/* Top Banner Block- contact info */
+
+/* Top Banner Block- contact info */ 
 #container {
-    padding-top: 130px;
+    padding-top: 225px;
 }
 
-#top-content {
+.top-content {
     display: block; 
     width: 100%;
     margin: 0;
     height: 25px; 
     background-color: #161c3c; 
-    border-bottom: 5px solid #501d19;
+    border-bottom: 2px solid #fdd553;
 }
-
 
 /* Logo */
-#logo {
-    float: left;
-    background-color: white; 
-    height: 50px;
-}
-
+    
+.logo {
+    width: 30%;
+    float: left;    
+    }
 .inline-img {
     display: block;
     padding: 25px;
+    margin: 0;
 }
 
+/* Header photo */
+#banner img {
+    width: 100%; 
+    border-top: 2px solid #501d19;
+    border-bottom: 2px solid #501d19;
+}
 
-/* Navigation */ 
+/* Navigation */
+.main-nav {
+    z-index: 1001;
+    width: 70%;
+    float: right;
+}
+    
 .main-nav ul {
     float: right;
-    padding: 25px 0 25px 0;
+    position: relative;
+    padding: 75px 0 50px 0;
     background-color: white;
 }
 .main-nav a {
@@ -79,14 +88,6 @@ html, body, p, a {
 .main-nav li:last-child {
     border-right: none;
 }
-    
-
-/* Header */
-#banner img {
-    width: 100%; 
-    border-top: 2px solid #501d19;
-    border-bottom: 2px solid #501d19;
-}
 
 
 
@@ -96,18 +97,19 @@ html, body, p, a {
     flex-direction: row;
     justify-content: center;
     padding-top: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 
 #content-boxes div {
     width: 30%;
     margin: auto;
+    padding-bottom: 50px;
 }
 
 #content-boxes img {
-    width: 100%; 
-    box-shadow: 5px 5px 5px 5px #ddd inset;
+    width: 100%;
 }
+
 
 /* Footer */
 
@@ -118,7 +120,7 @@ footer {
     bottom: 0;
     width: 100%;
     z-index: 100;
-    background-color: white; 
+    background-color:  #ffffff;
 }
 
 footer li {
@@ -126,34 +128,123 @@ footer li {
     text-decoration: none;
 }
 
+footer p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .50em;
+}
 
 
 
-/************** OUR STORY ****************/
+/************** OUR STORY ***************/
 
-/* About Premiere Chefs */
+/* About Premiere Chefs */ 
+.pc-about-container {
+    padding-top: 225px;
+    padding-bottom: 650px;   
+}
+
 #about-pc {
     display: block;
-    padding: 150px 0 0 0;
-    width: 100%;
+    float: left; 
+    padding-left: 20px;
+    width: 55%;
+    min-height: 125px;
     
 }
 
-#about-pc .pc-header {
+.pc-header {
     text-align: center; 
     font-weight: 600px;
-    padding: 20px 0 0 0;
-    font-family: 
-    font-size: 1.5em;
+    font-family: 'Dynalight', cursive;
+    font-size: 2em;
     
 }
 
-#about-pc .pc-pg { 
-    padding: 25px;
+.pc-pg { 
+    font-family: 'Open Sans', sans-serif;
+    font-size: .75em;
+    padding: 10px;
     text-align: center;
 }
 
+.about-photo {
+    float: right;
+    width: 35%;
+    border: 2px solid #501d19;
+    margin: 20px 30px;
+    height: auto;
+}
 
+
+/************* SERVICES *************/
+
+/* About Services */
+
+#services-container {
+    padding-top: 225px;
+    padding-bottom: 200px;
+    width: 100%;
+}
+
+#services-content {
+    display: block;
+    margin: 0 auto; 
+}
+
+#services-content .pc-pg {
+    width: 75%;
+}
+
+#service-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#service-boxes div {
+    width: 30%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+#service-boxes img {
+    width: 100%;
+    border: 2px solid #501d19;
+}
+
+
+/************* RECIPES *************/
+
+/************* CONTACT *************/
+.contact-form {
+    padding-top: 225px; 
+    width: 100%;
+    height: 700px;
+}
+
+form {
+    display: block;
+    padding-left: 100px;
+    margin: 0 auto;
+}
+
+
+.contact-form .form-label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-align: left; 
+}
+.pc-input {
+    margin: 0px 0 10px 0;
+    padding: 5px;   
+}
+
+#pc-textarea {
+    border-color: #ddd;
+}
 
 
 
