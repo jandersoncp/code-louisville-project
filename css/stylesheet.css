@@ -1,4 +1,70 @@
 /* Get rid of top white space */
+html, header, body, p {
+    margin: 0;
+    padding: 0;    
+}
+
+/*********** HEADER *********/
+
+/* Header - contains logo and nav*/
+.page-header {
+    margin: 15px 0 0 0;  
+}
+
+.page-header .container {
+    margin: 0;
+    width: 100%;
+    
+}
+
+/* Logo */
+.navbar-brand {
+    height: auto;
+    padding: 0;
+}
+
+/* Nav bar */
+.nav {
+    border-bottom: none;
+    padding-top: 50px;  
+}
+
+header li a {
+    color: #2d2c2c;
+}
+
+header li a:active {
+    color: #ddd;
+}
+
+/****** BODY *******/
+
+.wrapper {
+    padding-top: 175px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+/* Get rid of top white space 
 html, body, p {
     margin: 0;
     padding: 0;    
@@ -11,9 +77,9 @@ html, body, p, a {
 }
 
 
-/************** HOMEPAGE ***************/
+/************** HOMEPAGE **************
 
-/* Static header */
+/* Static header 
 .static-header {
     position: fixed;
     height: 200px;
@@ -24,7 +90,7 @@ html, body, p, a {
 }
 
 
-/* Top Banner Block- contact info */ 
+/* Top Banner Block- contact info 
 #container {
     padding-top: 225px;
 }
@@ -38,7 +104,7 @@ html, body, p, a {
     border-bottom: 2px solid #fdd553;
 }
 
-/* Logo */
+/* Logo 
     
 .logo {
     width: 30%;
@@ -50,14 +116,14 @@ html, body, p, a {
     margin: 0;
 }
 
-/* Header photo */
+/* Header photo 
 #banner img {
     width: 100%; 
     border-top: 2px solid #501d19;
     border-bottom: 2px solid #501d19;
 }
 
-/* Navigation */
+/* Navigation 
 .main-nav {
     z-index: 1001;
     width: 70%;
@@ -91,7 +157,7 @@ html, body, p, a {
 
 
 
-/* Food photos and content boxes */
+/* Food photos and content boxes 
 #content-boxes {
     display: flex;
     flex-direction: row;
@@ -111,7 +177,7 @@ html, body, p, a {
 }
 
 
-/* Footer */
+/* Footer 
 
 footer {
     position: fixed;
@@ -135,9 +201,9 @@ footer p {
 
 
 
-/************** OUR STORY ***************/
+/************** OUR STORY ***************
 
-/* About Premiere Chefs */ 
+/* About Premiere Chefs *
 .pc-about-container {
     padding-top: 225px;
     padding-bottom: 650px;   
@@ -176,7 +242,7 @@ footer p {
 }
 
 
-/************* SERVICES *************/
+/************* SERVICES *************
 
 /* About Services */
 
@@ -216,11 +282,12 @@ footer p {
 }
 
 
-/************* RECIPES *************/
+/************* RECIPES *************
 
-/************* CONTACT *************/
+/************* CONTACT *************
 .contact-form {
-    padding-top: 225px; 
+    padding-top: 2
+        25px; 
     width: 100%;
     height: 700px;
 }
