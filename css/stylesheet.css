@@ -39,15 +39,22 @@ header li a:active {
 
 /****** BODY *******/
 
-.wrapper {
-    padding-top: 175px;
+
+.col-sm-4 img {
+    width: 100%;
 }
 
 
+/****** FOOTER *******/
 
 
+footer .container {
+    text-align: center;
+}
 
-
+footer .container img {
+    margin: 0 auto;
+}
 
 
 
